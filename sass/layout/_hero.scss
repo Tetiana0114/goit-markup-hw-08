@@ -1,31 +1,65 @@
 .hero {
-  background-color: var(--hero-background-color);
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  max-width: 1600px;
-  height: 600px;
+  width: 100%;
+  height: 400px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 118px;
+  text-align: center;
+  background-color: var(--hero-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-mob.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-mob-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-tab.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-img.jpg);
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-dekstop-2x.jpg);
+    }
+  }
+
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: var(--text-white);
-
-    max-width: 696px;
-    margin-top: 0;
-    margin-bottom: 30px;
+    text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 30px;
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      width: 290px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      font-size: 26px;
+      line-height: 1.62;
+      width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+      width: 696px;
+    }
   }
   &__btn {
     padding: 10px 32px;
