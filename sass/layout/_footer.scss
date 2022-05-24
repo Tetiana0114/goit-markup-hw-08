@@ -9,9 +9,9 @@
       justify-content: center;
     }
     @media screen and (max-width: 1199px) {
+      display: flex;
       font-size: 24px;
       line-height: 1.16;
-      display: flex;
     }
   }
 }
@@ -59,21 +59,29 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
-}
-.footer-contact-item:not(:last-child) {
-  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 /*.........................социальные сети футер..............................*/
 .footer-container {
+  /*@media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
   @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }*/
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: baseline;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
     justify-content: space-around;
   }
 }
@@ -110,9 +118,9 @@
 .footer-soc-item {
   width: 44px;
   height: 44px;
-}
-.footer-soc-item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .footer-soc-link {
   width: 100%;
@@ -129,11 +137,9 @@
     background-color: var(--hover-and-focus-color);
   }
 }
-
 .footer-soc-svg {
   fill: currentColor;
 }
-
 /*..............................footer form................................*/
 .footer-form-title {
   font-weight: 700;
@@ -190,7 +196,6 @@
     width: 358px;
   }
 }
-
 .footer-subcribe-btn {
   display: flex;
   align-items: center;
@@ -204,7 +209,6 @@
     background-color: var(--second-btn-color);
   }
 }
-
 .footer-form-svg {
   fill: currentColor;
   display: block;
