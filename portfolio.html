@@ -21,7 +21,7 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <!--<header class="header">
       <div class="container header-section">
         <nav class="navigation">
           <a href="" class="logo header__logo link"
@@ -59,7 +59,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header>-->
     <main>
       <section class="project-filters section">
         <div class="container">
@@ -110,13 +110,33 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project1.jpg"
-                    alt="образец сайта"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project1-dekstop-1x.jpg 1x,
+                        ./images/projects/project1-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project1-tab-1x.jpg 1x,
+                        ./images/projects/project1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project1-mob-1x.jpg 1x,
+                        ./images/projects/project1-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/projects/project1-dekstop-1x.jpg" alt="образец сайта" />
+                  </picture>
+                  <!--width="370"
+                    height="294"-->
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -135,13 +155,31 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project2.jpg"
-                    alt="игра в баскетбол"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project2-dekstop-1x.jpg 1x,
+                        ./images/projects/project2-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2-tab-1x.jpg 1x,
+                        ./images/projects/project2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project2-mob-1x.jpg 1x,
+                        ./images/projects/project2-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/projects/project2-dekstop-1x.jpg" alt="игра в баскетбол" />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -162,13 +200,31 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project3.jpg"
-                    alt="лого ресторана"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project3-dekstop-1x.jpg 1x,
+                        ./images/projects/project3-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project3-tab-1x.jpg 1x,
+                        ./images/projects/project3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project3-mob-1x.jpg 1x,
+                        ./images/projects/project3-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/projects/project3-dekstop-1x.jpg" alt="лого ресторана" />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -187,13 +243,31 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project4.jpg"
-                    alt="наушники"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project4-dekstop-1x.jpg 1x,
+                        ./images/projects/project4-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project4-tab-1x.jpg 1x,
+                        ./images/projects/project4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project4-mob-1x.jpg 1x,
+                        ./images/projects/project4-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/projects/project4-dekstop-1x.jpg" alt="наушники" />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -212,13 +286,31 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project5.jpg"
-                    alt="две коробки"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project5-dekstop-1x.jpg 1x,
+                        ./images/projects/project5-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project5-tab-1x.jpg 1x,
+                        ./images/projects/project5-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project5-mob-1x.jpg 1x,
+                        ./images/projects/project5-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/projects/project5-dekstop-1x.jpg" alt="две коробки" />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -237,13 +329,34 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project6.jpg"
-                    alt="изображение веб-сайта на мониторе"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project6-dekstop-1x.jpg 1x,
+                        ./images/projects/project6-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project6-tab-1x.jpg 1x,
+                        ./images/projects/project6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project6-mob-1x.jpg 1x,
+                        ./images/projects/project6-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/projects/project6-dekstop-1x.jpg"
+                      alt="изображение веб-сайта на мониторе"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -262,13 +375,34 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project7.jpg"
-                    alt="разворот страниц журнала"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project7-dekstop-1x.jpg 1x,
+                        ./images/projects/project7-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project7-tab-1x.jpg 1x,
+                        ./images/projects/project7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project7-mob-1x.jpg 1x,
+                        ./images/projects/project7-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/projects/project7-dekstop-1x.jpg"
+                      alt="разворот страниц журнала"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -287,13 +421,31 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project8.jpg"
-                    alt="бирка с лого"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project8-dekstop-1x.jpg 1x,
+                        ./images/projects/project8-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project8-tab-1x.jpg 1x,
+                        ./images/projects/project8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project8-mob-1x.jpg 1x,
+                        ./images/projects/project8-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/projects/project8-dekstop-1x.jpg" alt="бирка с лого" />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -312,13 +464,34 @@
             <li class="project-list-item">
               <a href="" class="project-link link">
                 <div class="project-description">
-                  <img
-                    src="./images/project9.jpg"
-                    alt="работа с приложением на ноутбуке"
-                    width="370"
-                    height="294"
-                    class="project-img"
-                  />
+                  <picture class="project-img">
+                    <source
+                      srcset="
+                        ./images/projects/project9-dekstop-1x.jpg 1x,
+                        ./images/projects/project9-dekstop-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project9-tab-1x.jpg 1x,
+                        ./images/projects/project9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/projects/project9-mob-1x.jpg 1x,
+                        ./images/projects/project9-mob-2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      src="./images/projects/project9-dekstop-1x.jpg"
+                      alt="работа с приложением на ноутбуке"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-overlay-text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -337,7 +510,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container footer-container">
         <div class="footer-adress-section">
           <a href=" " class="logo footer__logo link"
@@ -411,6 +584,6 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer>-->
   </body>
 </html>
