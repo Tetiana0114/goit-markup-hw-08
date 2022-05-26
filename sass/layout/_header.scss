@@ -14,7 +14,8 @@
   align-items: center;
 }
 .menu-list {
-  display: flex;
+  display: none;
+  /*display: flex;*/
   margin-left: 93px;
   text-align: center;
   &__item:not(:last-child) {
@@ -40,7 +41,8 @@
 
 /*contacts*/
 .contact-list {
-  display: flex;
+  display: none;
+  /*display: flex;*/
   margin-left: auto;
   align-items: center;
   &__item:not(:last-child) {
