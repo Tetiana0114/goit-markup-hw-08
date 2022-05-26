@@ -1,4 +1,7 @@
 .working {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 0;
   &__title {
     font-size: 36px;
