@@ -993,12 +993,11 @@ body {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 381px) and (max-width: 479px) {
   .project-overlay-text {
     top: 20;
-    bottom: 20;
-    left: 15;
-    font-size: 14;
+    left: 20;
+    text-align: left;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
