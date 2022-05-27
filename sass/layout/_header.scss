@@ -2,8 +2,16 @@
   background-color: var(--background-white);
   border-bottom: 1px solid var(--header-border-color);
   &__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
   }
 }
 
@@ -15,60 +23,79 @@
 }
 .menu-list {
   display: none;
-  /*display: flex;*/
-  margin-left: 93px;
-  text-align: center;
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-  &__link {
-    position: relative;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-color);
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    transition: color var(--main-transition);
-    &:hover,
-    &:focus {
-      color: var(--hover-and-focus-color);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+    text-align: center;
+    &__item:not(:last-child) {
+      margin-right: 50px;
     }
+    &__link {
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--main-color);
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      transition: color var(--main-transition);
+      &:hover,
+      &:focus {
+        color: var(--hover-and-focus-color);
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
   }
 }
 
 /*contacts*/
 .contact-list {
   display: none;
-  /*display: flex;*/
-  margin-left: auto;
-  align-items: center;
-  &__item:not(:last-child) {
-    margin-right: 50px;
-  }
-  &__mail,
-  &__tel {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
+  @media screen and (min-width: 768px) {
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center;
-    transition: color var(--main-transition);
-    &:hover,
-    &:focus {
-      color: var(--hover-and-focus-color);
+    margin-left: auto;
+    &__mail,
+    &__tel {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--main-text-color);
+      display: flex;
+      align-items: center;
+      transition: color var(--main-transition);
+      &:hover,
+      &:focus {
+        color: var(--hover-and-focus-color);
+      }
+      @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
+    }
+    &__icon {
+      fill: currentColor;
+      align-items: center;
+      margin-right: 10px;
     }
   }
-  &__icon {
-    fill: currentColor;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    align-items: flex-start;
+    flex-direction: column;
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
     align-items: center;
-    margin-right: 10px;
+    &__item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 .current {

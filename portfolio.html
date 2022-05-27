@@ -23,11 +23,11 @@
   <body>
     <header class="header">
       <div class="container header-section">
+
         <nav class="navigation">
           <a href="" class="logo header__logo link"
             >Web<span class="logo header__logo logo--black">Studio</span></a
           >
-
           <ul class="menu-list list">
             <li class="menu-list__item">
               <a href="./index.html" class="menu-list__link link">Студия</a>
@@ -58,6 +58,61 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-open-btn menu-btn">
+          <svg class="menu-open-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+          </button>
+      
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu__container">
+          <div class="mob-menu-top">
+        <button type="button" class="menu-close-btn menu-btn">
+          <svg class="mob-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+          </button>
+          <nav class="mob-nav">
+          <ul class="mob-list list">
+            <li class="mob-list__item">
+              <a href="./index.html" class="mob-list__link link">Студия</a>
+            </li>
+            <li class="mob-list__item">
+              <a href="" class="mob-list__link link current">Портфолио</a>
+            </li>
+            <li class="mob-list__item">
+              <a href="" class="mob-list__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        
+        <div class="mob-menu-bottom">
+        <ul class="mob-contact-list list">
+          <li class="mob-contact-list__item">
+            <a class="mob-contact-list__tel mob-connect link" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-contact-list__item">
+            <a class="mob-contact-list__mail mob-connect link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+
+        <ul class="mob-soc-list list">
+          <li class="mob-soc-list__item"><a class="mob-soc-list__link link" href="">Instagram</a></li>
+          <li class="mob-soc-list__item"><a class="mob-soc-list__link link" href="">Twitter</a></li>
+          <li class="mob-soc-list__item"><a class="mob-soc-list__link link" href="">Facebook</a></li>
+          <li class="mob-soc-list__item"><a class="mob-soc-list__link link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    
+
+      </div>
       </div>
     </header>
     <main>
