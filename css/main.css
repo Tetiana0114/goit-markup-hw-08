@@ -157,6 +157,11 @@ body {
   background-color: var(--backdrop-bg-color);
   transition: opacity var(--main-transition), visibility var(--main-transition);
 }
+@media screen and (orientation: landscape) {
+  .backdrop {
+    overflow-y: auto;
+  }
+}
 
 .modal {
   width: 528px;
@@ -174,6 +179,26 @@ body {
 .backdrop.is-hidden .modal {
   opacity: 0;
   transform: translate(-50%, -50%) scale(1.1);
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 100%;
+    height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .is-hidden {
@@ -302,6 +327,12 @@ body {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
+@media screen and (max-width: 1199px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
 
 .contract-link {
   font-weight: 400;
@@ -309,6 +340,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hover-and-focus-color);
+}
+@media screen and (max-width: 1199px) {
+  .contract-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .icon-blank {
@@ -386,7 +423,6 @@ body {
 }
 @media screen and (max-width: 767px) {
   .mob-menu {
-    transition: transform var(--main-transition);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -395,6 +431,8 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
+    transform: translateX(0%);
+    transition: transform var(--main-transition);
   }
   .mob-menu__container {
     overflow-y: auto;
@@ -403,6 +441,9 @@ body {
     height: 100%;
     justify-content: space-between;
     align-items: flex-start;
+  }
+  .mob-menu.is-hidden {
+    transform: translateX(100%);
   }
 }
 
@@ -659,6 +700,8 @@ body {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 1.61;
 }
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .hero__title {

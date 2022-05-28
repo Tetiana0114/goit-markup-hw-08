@@ -30,7 +30,6 @@
     display: none;
   }
   @media screen and (max-width: 767px) {
-    transition: transform var(--main-transition);
     position: fixed;
     z-index: 1;
     top: 0;
@@ -39,6 +38,8 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
+    transform: translateX(0%);
+    transition: transform var(--main-transition);
     &__container {
       overflow-y: auto;
       display: flex;
@@ -46,6 +47,9 @@
       height: 100%;
       justify-content: space-between;
       align-items: flex-start;
+    }
+    &.is-hidden {
+      transform: translateX(100%);
     }
   }
 }
