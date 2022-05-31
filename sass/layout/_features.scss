@@ -1,7 +1,9 @@
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
@@ -52,6 +54,9 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    @media screen and (max-width: 409px) {
+      text-align: center;
+    }
   }
   &__icon {
     display: inline-block;

@@ -155,7 +155,7 @@
   align-items: center;
   margin-bottom: 30px;
   @media screen and (max-width: 479px) {
-    display: block;
+    display: inline-block;
     text-align: center;
   }
 }
