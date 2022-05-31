@@ -66,9 +66,6 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
-    &:first-child .card-text {
-      padding-bottom: 56px;
-    }
   }
   @media screen and (min-width: 1200px) {
     width: 370px;
@@ -94,9 +91,10 @@
   color: var(--main-text-color);
 }
 .card-text {
-  padding: 24px 20px;
   border: 1px solid var(--card-border-color);
   border-top: 0;
+  padding: 24px 20px;
+  flex-grow: 1;
 }
 .project-link {
   display: block;
@@ -129,9 +127,11 @@
 }
 .project-overlay-text {
   position: absolute;
-  top: 63px;
-  left: 24px;
-  overflow: auto;
+  bottom: 0;
+  left: 0;
+  padding: 40px 20px;
+  height: 100%;
+  overflow-y: auto;
   opacity: 0;
   display: block;
   font-size: 18px;
@@ -143,21 +143,13 @@
   .project-link:focus & {
     opacity: 1;
   }
-  @media screen and (max-width: 380px) {
-    top: 30px;
-    font-size: 14px;
-  }
-  @media screen and (min-width: 381px) and (max-width: 479px) {
-    top: 20;
-    left: 20;
-    text-align: left;
-  }
-
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    top: 77px;
-    right: 24px;
+    padding: 77px 24px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    top: 49px;
+    padding: 49px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
   }
 }
