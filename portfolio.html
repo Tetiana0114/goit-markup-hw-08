@@ -59,17 +59,19 @@
           </li>
         </ul>
 
-        <button type="button" class="menu-open-btn menu-btn">
-          <svg class="menu-open-icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <button type="button" class="menu-btn menu-btn--open" data-menu-open>
+          <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
               <use href="./images/icons.svg#icon-menu-open"></use>
           </svg>
           </button>
-      
-      <div class="mob-menu is-hidden">
-        <div class="mob-menu__container">
+
+      <!-----MOBILE-MENU----->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-menu-container">
+
           <div class="mob-menu-top">
-        <button type="button" class="menu-close-btn menu-btn">
-          <svg class="mob-menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+        <button type="button" class="menu-btn menu-btn--close" data-menu-close>
+          <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
               <use href="./images/icons.svg#icon-menu-close"></use>
           </svg>
           </button>
@@ -109,12 +111,11 @@
           <li class="mob-soc-list__item"><a class="mob-soc-list__link link" href="">LinkedIn</a></li>
       </ul>
     </div>
-
-    
-
       </div>
       </div>
     </header>
+
+    
     <main>
       <section class="project-filters section">
         <div class="container">
