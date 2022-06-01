@@ -1006,8 +1006,8 @@ body {
   font-size: 28px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--main-color);
   margin-bottom: 30px;
+  color: var(--main-color);
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
