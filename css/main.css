@@ -1146,6 +1146,12 @@ body {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project-list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
 
 .project-list-item {
   background-color: var(--background-white);
@@ -1166,13 +1172,7 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project-list-item {
-    width: 354px;
-  }
-  .project-list-item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .project-list-item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+    width: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
